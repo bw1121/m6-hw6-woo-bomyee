@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10% 5%;
+    background-color: #cedbe6;
+    color: #080819;
+}
+
+main {
+    padding: 0 5%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    flex: 1 0 auto;
+    background-image: url('img/sky.jpg');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #080a19;
+}
+
+footer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10% 5%;
+    flex-shrink: 0;
+    background-color: #43565f;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    header, footer {
+        padding: 5%;
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    header, footer {
+        padding: 3%;
+    }
+}
