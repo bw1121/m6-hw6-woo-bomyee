@@ -37,6 +37,7 @@ main {
     align-items: center;
     justify-content: center;
     color: #080a19;
+    line-height: 3rem;
 }
 
 footer {
