@@ -4,11 +4,11 @@ xmlhttp.onreadystatechange = function() {
         var apiResult = JSON.parse(this.responseText);
 
         //Add city
-        var addCity = document.createTextNode(' ' + apiResult.name);
+        var addCity = document.createTextNode(apiResult.name);
         document.getElementById('city').appendChild(addCity);
 
         //Add weather description
-        var addWeather = document.createTextNode(' ' + apiResult.weather[0].description);
+        var addWeather = document.createTextNode(apiResult.weather[0].description);
         document.getElementById('weather').appendChild(addWeather);
     }
 };
